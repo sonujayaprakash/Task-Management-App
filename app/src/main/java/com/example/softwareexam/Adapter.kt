@@ -42,10 +42,6 @@ class Adapter(private var taskList : ArrayList<Task>) : RecyclerView.Adapter<Ada
         holder.edit.setOnClickListener {
 
             val db = Firebase.firestore
-
-            db.collection("TASK")
-                .document(tasks.docId)
-
             val updates = hashMapOf<String, Any>(
                 "task" to holder.task.text.toString(),
                 "description" to holder.desc.text.toString(),

@@ -29,7 +29,6 @@ class Register : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val db = Firebase.firestore
 
         val name = findViewById<EditText>(R.id.name)

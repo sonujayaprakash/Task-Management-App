@@ -64,6 +64,5 @@ class ViewEdit : AppCompatActivity() {
                     Log.e("ViewEdit", "Firestore error: ", exception)
                 }
         }
-
     }
 }
